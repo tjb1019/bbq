@@ -15,10 +15,8 @@ section.about {
           box-shadow: $shadow-light;
 
           &.logo {
-            border: 5px solid $color-dark;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            box-shadow: none;
+            width: 80%;
           }
         }
       }
