@@ -1,0 +1,49 @@
+@import '~variables.scss';
+@import '~mixins.scss';
+@import '~styles/_buttons.scss';
+@import '~styles/_icons.scss';
+@import '~styles/_modals.scss';
+
+
+// globals
+body {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: $font-weight-normal;
+    color: $color-dark;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+  background: $main-background;
+    //background-image: $background-pattern;
+    //background-attachment: fixed;
+    padding: $main-padding;
+}
+
+div.title-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .page-title {
+    display: inline-flex;
+    margin-top: 0;
+    padding: 0 10px;
+    border-bottom: 5px solid $color-primary;
+    font-family: $font-title;
+    font-size: 2rem;
+  }
+}
+
+.title,
+.title-accent {
+    font-family: $font-title;
+    border-bottom: 0.5px solid $color-primary;
+
+    &-accent {
+        font-family: $font-accent;
+    }
+}

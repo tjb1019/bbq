@@ -1,0 +1,25 @@
+<main>
+    <section class="photos">
+        <div class="title-wrapper">
+          <h1 class="page-title">Photos</h1>
+        </div>
+
+        <ul class="photo-list">
+            <li class="photo" *ngFor="let photo of photos;" (click)="openModal(photo)">
+                <img src="{{ photo.thumbnail }}" alt="{{ photo.title }}">
+            </li>
+        </ul>
+
+        <div class="modal-overlay" (click)="outsideClick($event)">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>{{ modalTitle }}</h3>
+                    <span class="close" (click)="closeClick()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-image" src="{{ modalImage }}" alt="{{ modalTitle }}">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

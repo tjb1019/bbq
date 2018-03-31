@@ -1,0 +1,87 @@
+// typography
+$font-primary: 'Montserrat', sans-serif;
+$font-accent: 'Special Elite', serif;
+$font-display: 'Bungee Inline', serif;
+$font-nav: $font-display;
+$font-title: $font-display;
+$font-button: $font-primary;
+
+$font-weight-normal: 400;
+$font-weight-heavy: 600;
+
+// color palette
+$color-light: white;
+$color-dark: hsl(0, 0%, 17%);
+$color-grey: hsl(208, 7%, 46%);
+$color-grey-light: hsl(208, 7%, 66%);
+
+$color-primary: #c3141f;
+$color-secondary: $color-grey;
+
+// gradients
+$gradient-primary: linear-gradient(to right,hsl(0, 100%, 40%),hsl(0, 100%, 50%));
+
+// backgrounds
+$background-pattern: url('~assets/images/brickwall.png');
+
+// shadows
+$shadow-light: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+$shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.25);
+$shadow-dark: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
+
+// animations
+$content-animation: fadeIn 0.5s;
+
+// buttons
+$button-small: 5px 10px;
+$button-medium: 10px 15px;
+$button-large: 15px 20px;
+$button-border: none;
+$button-border-radius: 1px;
+$button-shadow: $shadow-light;
+$button-shadow-hover: $shadow-dark;
+
+// modals
+$modal-header-font: $font-display;
+
+// borders
+$border-bottom-radius: 5px;
+
+// header
+$header-height: 120px;
+$header-padding: 0 30px;
+$header-border-height: 5px;
+$header-border: $header-border-height solid transparent;
+$header-border-image: $gradient-primary 10;
+
+$logo-height: 120px;
+$logo-width: 175px;
+
+$social-network-padding: 15px;
+
+// nav
+$nav-height: 60px;
+$nav-padding: 0 30px;
+$nav-background: $color-light;
+$nav-color: $color-dark;
+$nav-font: $font-nav;
+$nav-item-margin: 0 15px;
+$nav-item-margin-narrow: 0 5px;
+$nav-item-padding: 0 5px;
+$nav-border-bottom: 10px solid $color-primary;
+
+// main
+$main-background: $color-light;
+$main-padding: 55px 65px;
+$main-border: 10px solid transparent;
+
+// banner
+$banner-height: 360px;
+$banner-background: $gradient-primary;
+$banner-padding: 40px 20px;
+
+// footer
+$footer-height: 250px;
+$footer-padding: 50px 50px;
+$footer-border: 10px solid transparent;
+$footer-border-image: $gradient-primary 10;

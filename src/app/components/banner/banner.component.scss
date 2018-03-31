@@ -1,0 +1,7 @@
+@import '~variables.scss';
+
+section.banner {
+    height: $banner-height;
+    background: $banner-background;
+    padding: $banner-padding;
+}

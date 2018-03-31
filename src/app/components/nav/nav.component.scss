@@ -1,0 +1,104 @@
+@import '~variables.scss';
+
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    height: $nav-height;
+    padding: $nav-padding;
+    background: $main-background;
+    //background-image: $background-pattern;
+    //background-attachment: fixed;
+    color: $nav-color;
+    font-family: $nav-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.shadowed {
+        z-index: 3;
+        background: $color-light;
+        box-shadow: $shadow-light;
+    }
+
+    span.alt-logo {
+        flex: 1;
+        background: $color-primary;
+        color: $color-light;
+        padding: 5px 10px;
+        box-shadow: $shadow-light;
+        display: inline-block; // needed for animation to take effect on span elements
+        animation: slideInDown 0.4s;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    ul.nav-items {
+        list-style-type: none;
+        margin: 0;
+
+        li.nav-item {
+            display: inline-flex;
+            line-height: $nav-height;
+            margin: $nav-item-margin;
+            padding: $nav-item-padding;
+            text-transform: uppercase;
+            transition: 0.25s;
+            position: relative;
+
+            // underline reveal
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: $color-primary;
+                border-radius: 500px;
+                height: 0px;
+                transition: .25s;
+            }
+
+            // events
+            &:hover,
+            &.active {
+
+                &:after {
+                    height: 6px;
+                }
+            }
+
+            &.narrow {
+                margin: $nav-item-margin-narrow;
+            }
+
+            // nav item links
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+
+    ul.social-networks {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        animation: slideInDown 0.4s;
+
+        li.social-network {
+            display: inline-flex;
+            padding-right: $social-network-padding;
+
+            &:nth-child(4) {
+                padding-right: 0;
+            }
+        }
+    }
+}

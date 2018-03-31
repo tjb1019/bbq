@@ -1,0 +1,38 @@
+<nav [class.shadowed]="scrolling">
+    <div style="flex: 1">
+        <a (click)="router.navigate(['/']); navState.activeRoute = null;">
+            <span class="alt-logo" *ngIf="scrolling">Sullivan's Heritage BBQ</span>
+        </a>
+    </div>
+    
+    <ul class="nav-items">
+        <li class="nav-item" *ngFor="let route of routes" (click)="navState.activeRoute = route" [class.active]="route == navState.activeRoute" [class.narrow]="scrolling">
+            <a routerLink="{{ route.route }}">{{ route.name }}</a>
+        </li>
+    </ul>
+
+    <div style="flex: 1">
+        <ul class="social-networks" *ngIf="scrolling">
+            <li class="social-network">
+                <a href="" class="round">
+                  <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-network">
+                <a href="" class="round">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-network">
+                <a href="" class="round">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-network">
+                <a href="" class="round">
+                    <i class="fa fa-pinterest"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,76 @@
+@import '~variables.scss';
+
+section.contact {
+  animation: $content-animation;
+
+  h2 {
+    font-family: $font-accent;
+    margin: 0;
+    color: $color-primary;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  a:hover {
+    color: $color-primary;
+  }
+
+  div.location {
+    padding-bottom: 55px;
+  }
+
+  div.image-container {
+    img {
+      height: 200px;
+      width: 350px;
+      box-shadow: $shadow-light;
+    }
+  }
+
+  div.contact-row {
+      display: flex;
+      padding-bottom: 50px;
+
+      div.col-left,
+      div.col-right {
+          padding: 15px 20px;
+      }
+
+      div.col-left {
+        flex: 1;
+
+        div.map-container {
+          box-shadow: $shadow-dark;
+        }
+      }
+
+      div.col-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        address,
+        span.tele,
+        span.email {
+          display: block;
+          padding: 10px 0;
+          font-family: $font-primary;
+        }
+
+        address {
+          font-style: normal;
+        }
+
+        span.email a {
+          color: inherit;
+
+          &:hover {
+              color: $color-primary;
+          }
+        }
+      }
+  }
+}

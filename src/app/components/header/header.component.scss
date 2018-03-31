@@ -1,0 +1,119 @@
+@import '~variables.scss';
+
+header {
+    background: $main-background;
+    //background-image: $background-pattern;
+    //background-attachment: fixed;
+    height: $header-height;
+    padding: $header-padding;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div.info-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: $header-height + 10px;
+        margin-top: 35px;
+
+        img {
+            font-size: 16px;
+            color: $color-primary;
+            padding-right: 5px;
+            vertical-align: middle;
+        }
+
+        span.tele,
+        span.email,
+        div.hours {
+            padding: 4px 0;
+        }
+        
+        span.tele,
+        span.email,
+        span.time-block {
+            display: block;
+            font-family: $font-primary;
+            color: $color-dark;
+        }
+
+        span.email > a {
+            color: inherit;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        div.hours {
+            z-index: 2;
+
+            span.time-block {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding-left: 40px;
+
+                &:nth-child(1) {
+                    padding: 0;
+                    padding-bottom: 4px;
+                    height: 22px;
+                    overflow: visible;
+                }
+
+                span.day {
+                }
+
+                span.time {
+                    color: $color-grey;
+                    font-family: $font-accent;
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+    
+    div.logo-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a#logo {
+            margin: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+    
+            img {
+                height: $logo-height;
+                width: $logo-width;
+            }
+        }
+    }
+
+    ul.social-networks {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        height: $header-height;
+        margin-top: 35px;
+
+        li.social-network {
+            display: inline-flex;
+            padding-right: $social-network-padding;
+
+            &:nth-child(4) {
+                padding-right: 0;
+            }
+        }
+    }
+
+}
