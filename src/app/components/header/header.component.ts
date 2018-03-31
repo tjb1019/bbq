@@ -11,8 +11,8 @@ import { RouteManagementService } from '../../services/route-management.service'
 export class HeaderComponent implements OnInit {
 
   constructor(
-    private navState: RouteManagementService,
-    private router: Router
+    public navState: RouteManagementService,
+    public router: Router
   ) { }
 
   ngOnInit() {
