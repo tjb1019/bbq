@@ -3,11 +3,11 @@
 footer {
     display: flex;
     padding: $footer-padding;
-    border-top: 10px solid $color-dark;
-    border-bottom: 10px solid $color-dark;
-    background: $color-primary;
-    color: $color-light;
-    box-shadow: 0 -1px 1px 0 hsla(0, 0%, 0%, 0.1);
+    //border-top: 10px solid $color-dark;
+    //border-bottom: 10px solid $color-dark;
+    background: $color-light;
+    color: $color-dark;
+    box-shadow: 0 -4px 6px 0 hsla(0, 0%, 0%, 0.2);
 
     div.footer-col {
         flex: 1;
@@ -26,6 +26,7 @@ footer {
             font-family: $font-title;
             font-size: 1rem;
             border-bottom: 5px solid $color-dark;
+            color: $color-primary;
         }
     }
 
@@ -67,7 +68,7 @@ footer {
                 padding: 1px 0;
 
                 span.time {
-                    color: $color-dark;
+                    color: $color-grey;
                     font-family: $font-accent;
                     padding-left: 2px;
                 }
@@ -84,7 +85,7 @@ footer {
         padding: 2px 0;
 
         a {
-            color: $color-dark;
+            color: $color-primary;
 
             &:hover {
                 text-decoration: none;

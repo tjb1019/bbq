@@ -1,8 +1,9 @@
 @import '~variables.scss';
 @import '~mixins.scss';
-@import '~styles/_buttons.scss';
-@import '~styles/_icons.scss';
-@import '~styles/_modals.scss';
+@import '~styles/_buttons';
+@import '~styles/_icons';
+@import '~styles/_modals';
+@import '~styles/cards';
 
 
 // globals
@@ -32,7 +33,6 @@ div.title-wrapper {
     display: inline-flex;
     margin-top: 0;
     padding: 0 10px;
-    //border-bottom: 5px solid $color-primary;
     font-family: $font-title;
     font-size: 2rem;
   }

@@ -2,7 +2,7 @@
 
 button {
     background: white;
-    color: $color-dark;
+    color: $color-primary;
     padding: $button-medium;
     font-family: $font-button;
     text-transform: uppercase;
@@ -15,7 +15,8 @@ button {
     &:hover {
         cursor: pointer;
         box-shadow: $button-shadow-hover;
-        //background: darken(white, 5%);
+        background: $color-primary;
+        color: $color-light;
     }
 
     &:active {
@@ -43,7 +44,7 @@ button {
         color: $color-light;
 
         &:hover {
-            //background: darken($color-primary, 5%);
+            background: darken($color-primary, 5%);
         }
 
         &:focus {

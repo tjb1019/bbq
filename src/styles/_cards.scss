@@ -1,16 +1,14 @@
 @import '~variables.scss';
 
 .card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 15px;
     box-shadow: $shadow-light;
 
     .card-header {
-        flex-basis: 61px;
-    }
-
-    .card-body {
-        flex: 1;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      padding-left: 10px;
+      background: $color-dark;
+      color: $color-light;
     }
 }

@@ -2,6 +2,7 @@
 
 section.landing {
     display: flex;
+    padding-bottom: 50px;
 
     div.col {
         flex: 1;
@@ -9,7 +10,7 @@ section.landing {
         flex-direction: column;
 
         bbq-carousel {
-            //height: 406px;
+            height: 406px;
         }
 
         div.welcome {
@@ -18,13 +19,13 @@ section.landing {
 
             h2 {
                 font-family: $font-title;
-                margin-top: 20px;
+                margin-top: 0;
             }
 
             p {
                 //font-family: $font-accent;
                 color: $color-dark;
-                border-left: 5px solid $color-primary;
+                border-left: 10px solid $color-primary;
                 padding: 20px;
                 padding-right: 0;
                 line-height: 1.6;
@@ -36,15 +37,42 @@ section.landing {
         flex: 1;
 
         div.map {
-            padding: 20px 15px;
-
-            h2 {
-                font-family: $font-title;
-                margin-top: 20px;
-                border-bottom: 5px solid $color-primary;
-                padding-bottom: 5px;
-            }
+            padding-top: 20px;
         }
     }
 
+}
+
+section.summary {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  div.col {
+    flex: 1;
+    margin-left: 15px;
+
+    div.card-body {
+      display: flex;
+      align-items: flex-end;
+      height: 250px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.heritage {
+        background-image: url('~assets/images/stock/sausage.jpg');
+      }
+
+      &.menu {
+        background-image: url('~assets/images/stock/food-truck.jpg');
+      }
+
+      &.contact {
+        background-image: url('~assets/images/stock/wings.jpg');
+      }
+    }
+  }
 }

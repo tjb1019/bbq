@@ -19,19 +19,12 @@ header {
         height: $header-height + 10px;
         margin-top: 35px;
 
-        img {
-            font-size: 16px;
-            color: $color-primary;
-            padding-right: 5px;
-            vertical-align: middle;
-        }
-
         span.tele,
         span.email,
         div.hours {
             padding: 4px 0;
         }
-        
+
         span.tele,
         span.email,
         span.time-block {
@@ -74,20 +67,20 @@ header {
             }
         }
     }
-    
+
     div.logo-container {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         a#logo {
             margin: 0;
 
             &:hover {
                 cursor: pointer;
             }
-    
+
             img {
                 height: $logo-height;
                 width: $logo-width;

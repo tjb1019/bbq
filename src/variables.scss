@@ -13,7 +13,7 @@ $font-weight-heavy: 600;
 $color-light: white;
 $color-dark: hsl(0, 0%, 17%);
 $color-grey: hsl(208, 7%, 46%);
-$color-grey-light: hsl(208, 7%, 66%);
+$color-grey-light: hsl(0, 0%, 97%);
 
 $color-primary: #CC0000;
 $color-secondary: $color-grey;
@@ -78,10 +78,10 @@ $main-border: 10px solid transparent;
 // banner
 $banner-height: 360px;
 $banner-background: $gradient-primary;
-$banner-padding: 40px 20px;
+$banner-padding: 50px 100px;
 
 // footer
 $footer-height: 250px;
-$footer-padding: 50px 50px;
+$footer-padding: 50px;
 $footer-border: 10px solid transparent;
 $footer-border-image: $gradient-primary 10;
