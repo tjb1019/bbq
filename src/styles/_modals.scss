@@ -36,7 +36,7 @@ div.modal-overlay {
                 font-size: 40px;
                 color: $color-grey-light;
                 transition: 0.25s;
-    
+
                 &:hover,
                 &:focus {
                     cursor: pointer;
@@ -46,8 +46,10 @@ div.modal-overlay {
         }
 
         div.modal-body {
-            height: 500px;
-            
+          display: flex;
+          align-items: center;
+          height: 500px;
+
             img.modal-image {
                 height: 100%;
                 width: 100%;
