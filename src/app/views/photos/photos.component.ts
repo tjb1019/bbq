@@ -15,7 +15,8 @@ export class PhotosComponent implements OnInit {
   close: HTMLElement;
   modalTitle: string;
   modalImage: string;
-  
+  imageLoading: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -34,7 +35,7 @@ export class PhotosComponent implements OnInit {
   closeClick() {
     this.modalOverlay.setAttribute('style', 'display: none');
   }
-  
+
   outsideClick(e) {
     if (e.target == this.modalOverlay) {
       this.modalOverlay.setAttribute('style', 'display: none');
