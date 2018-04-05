@@ -20,42 +20,42 @@ export const ROUTES = [
 export const PHOTOS = [
     {
       title: 'Pulled Pork',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/brisket.jpg',
-      src: '../../../assets/images/sullivan/brisket.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/brisket.jpg',
+      src: 'assets/images/sullivan/brisket.jpg'
     },
     {
       title: 'Smoked Turkey',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/chicken.jpg',
-      src: '../../../assets/images/sullivan/chicken.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/chicken.jpg',
+      src: 'assets/images/sullivan/chicken.jpg'
     },
     {
       title: 'Carolina Barbeque',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/layered-beef.jpg',
-      src: '../../../assets/images/sullivan/layered-beef.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/layered-beef.jpg',
+      src: 'assets/images/sullivan/layered-beef.jpg'
     },
     {
       title: 'Pork Spare Ribs',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/more-ribs.jpg',
-      src: '../../../assets/images/sullivan/more-ribs.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/more-ribs.jpg',
+      src: 'assets/images/sullivan/more-ribs.jpg'
     },
     {
       title: 'Beef Brisket',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/multiple-roast.jpg',
-      src: '../../../assets/images/sullivan/multiple-roast.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/multiple-roast.jpg',
+      src: 'assets/images/sullivan/multiple-roast.jpg'
     },
     {
       title: 'Carolina Reapers!',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/peppers.jpg',
-      src: '../../../assets/images/sullivan/peppers.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/peppers.jpg',
+      src: 'assets/images/sullivan/peppers.jpg'
     },
     {
       title: 'More Spare Ribs',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/ribs.jpg',
-      src: '../../../assets/images/sullivan/ribs.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/ribs.jpg',
+      src: 'assets/images/sullivan/ribs.jpg'
     },
     {
       title: 'Beef Brisket',
-      thumbnail: '../../../assets/images/sullivan/thumbnails/roast.jpg',
-      src: '../../../assets/images/sullivan/roast.jpg'
+      thumbnail: 'assets/images/sullivan/thumbnails/roast.jpg',
+      src: 'assets/images/sullivan/roast.jpg'
     }
 ];
